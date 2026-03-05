@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Wishlist</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html">Shop</a>
+        <a href="./wishlist.html" class="active">Wishlist</a>
+        <a href="./cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="section-head">
+        <h1>Saved Items</h1>
+      </div>
+      <section id="wishlist-grid" class="product-grid"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><h4>Shop</h4><a href="./products.html">All Products</a></div>
+        <div><h4>Account</h4><a href="./profile.html">My Profile</a><a href="./orders.html">My Orders</a></div>
+      </div>
+      <p class="footer-bottom"><span>© <span id="year"></span> NovaCart</span></p>
+    </footer>
+
+    <script type="module" src="../js/wishlistPage.js"></script>
+  </body>
+</html>

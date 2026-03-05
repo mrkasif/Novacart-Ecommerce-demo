@@ -1,0 +1,9 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='420' height='320' viewBox='0 0 420 320'>
+  <rect width='420' height='320' fill='#f4f8ff'/>
+  <ellipse cx='210' cy='270' rx='120' ry='22' fill='#d9e4f8'/>
+  <rect x='120' y='105' width='180' height='130' rx='14' fill='#ffffff' stroke='#bed0ee' stroke-width='3'/>
+  <path d='M150 105c0-28 18-45 45-45h30c27 0 45 17 45 45' fill='none' stroke='#92b0df' stroke-width='8'/>
+  <circle cx='170' cy='160' r='10' fill='#dbe8fb'/>
+  <circle cx='250' cy='160' r='10' fill='#dbe8fb'/>
+  <text x='210' y='285' text-anchor='middle' fill='#5c6678' font-size='20' font-family='Arial'>Your Cart Awaits</text>
+</svg>

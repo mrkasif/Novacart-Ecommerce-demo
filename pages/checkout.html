@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Checkout</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="section checkout-layout">
+      <section class="reveal">
+        <h1>Checkout</h1>
+        <p class="secure-note">Secure Checkout • 256-bit SSL encrypted</p>
+        <form id="checkout-form" class="checkout-form">
+          <label>
+            Full Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Address
+            <textarea name="address" rows="3" required></textarea>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+
+          <fieldset>
+            <legend>Payment Method</legend>
+            <label><input type="radio" name="paymentMethod" value="cod"> Cash on Delivery</label>
+            <label><input type="radio" name="paymentMethod" value="upi"> UPI</label>
+            <label><input type="radio" name="paymentMethod" value="card"> Card</label>
+          </fieldset>
+          <div class="payment-icons">
+            <span>Visa</span><span>Mastercard</span><span>UPI</span><span>RuPay</span>
+          </div>
+
+          <p class="state">Easy returns within 7 days from delivery.</p>
+          <div id="checkout-errors" class="error-box"></div>
+          <p id="checkout-success" class="success-box"></p>
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+      </section>
+
+      <aside class="order-summary reveal">
+        <h2>Order Summary</h2>
+        <ul id="order-items"></ul>
+        <p class="total"><span>Total</span><strong id="summary-total">Rs. 0</strong></p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Shop</h4>
+          <a href="./products.html">All Products</a>
+          <a href="./products.html?category=clothing">Clothing</a>
+          <a href="./products.html?category=accessories">Accessories</a>
+        </div>
+        <div>
+          <h4>About</h4>
+          <p>NovaCart, 21 Market Road, Bengaluru</p>
+          <a href="mailto:support@novacart.in">support@novacart.in</a>
+        </div>
+        <div>
+          <h4>Customer Service</h4>
+          <a href="#">Returns Policy</a>
+          <a href="#">Shipping Info</a>
+          <a href="./checkout.html">Secure Checkout</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        <span>© <span id="year"></span> NovaCart</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </p>
+    </footer>
+
+    <script type="module" src="../js/checkoutPage.js"></script>
+  </body>
+</html>

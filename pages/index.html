@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Home</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <p class="eyebrow">NovaCart Collection</p>
+        <h1>Elevate Your Everyday Style</h1>
+        <p class="hero-copy">
+          Discover premium essentials, modern silhouettes, and accessories designed for daily movement.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./products.html">Shop Now</a>
+          <a class="btn btn-ghost" href="./products.html?category=clothing">Explore Clothing</a>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <h2>Featured Categories</h2>
+        </div>
+        <div class="category-grid" id="category-preview"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="trust-grid">
+          <article class="trust-card"><h3>Free Shipping</h3><p>On orders above Rs. 1,999</p></article>
+          <article class="trust-card"><h3>Easy Returns</h3><p>7-day hassle-free returns</p></article>
+          <article class="trust-card"><h3>Secure Payment</h3><p>Encrypted checkout flow</p></article>
+          <article class="trust-card"><h3>24/7 Support</h3><p>Dedicated customer helpdesk</p></article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <h2>Featured Products</h2>
+          <a href="./products.html">View all</a>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button type="button">How long does delivery take?</button>
+            <p>Most metro deliveries arrive within 2-4 business days.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button">Can I return discounted products?</button>
+            <p>Yes, all eligible products can be returned within 7 days of delivery.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button">Is online payment secure?</button>
+            <p>Yes, checkout is protected with modern encrypted payment processing.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Shop</h4>
+          <a href="./products.html">All Products</a>
+          <a href="./products.html?category=clothing">Clothing</a>
+          <a href="./products.html?category=footwear">Footwear</a>
+        </div>
+        <div>
+          <h4>About</h4>
+          <p>NovaCart, 21 Market Road, Bengaluru</p>
+          <a href="mailto:support@novacart.in">support@novacart.in</a>
+        </div>
+        <div>
+          <h4>Customer Service</h4>
+          <a href="./checkout.html">Secure Checkout</a>
+          <a href="#">Returns Policy</a>
+          <a href="#">Shipping Info</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        <span>© <span id="year"></span> NovaCart</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </p>
+    </footer>
+
+    <script type="module" src="../js/indexPage.js"></script>
+  </body>
+</html>

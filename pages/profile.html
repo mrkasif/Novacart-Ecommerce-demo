@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Profile</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html">Shop</a>
+        <a href="./profile.html" class="active">Profile</a>
+        <a href="./cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="section profile-wrap">
+      <section class="profile-card">
+        <h1>My Profile</h1>
+        <label>Avatar <input type="file" id="avatar-input" accept="image/*"></label>
+        <img id="avatar-preview" class="avatar-preview" alt="Avatar preview">
+        <label>Name <input id="name" type="text"></label>
+        <label>Email <input id="email" type="email"></label>
+        <label>Phone <input id="phone" type="tel"></label>
+        <button id="save-profile" class="btn btn-primary" type="button">Save Profile</button>
+      </section>
+
+      <section class="profile-card" id="addresses">
+        <h2>Saved Addresses</h2>
+        <div id="addresses-list"></div>
+        <textarea id="new-address" rows="3" placeholder="Add new address"></textarea>
+        <button id="add-address" class="btn btn-ghost" type="button">Add Address</button>
+      </section>
+
+      <section class="profile-card">
+        <h2>Change Password</h2>
+        <label>Current Password <input type="password"></label>
+        <label>New Password <input type="password"></label>
+        <button class="btn btn-primary" type="button">Update Password</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><h4>Shop</h4><a href="./products.html">All Products</a></div>
+        <div><h4>Account</h4><a href="./orders.html">My Orders</a><a href="./wishlist.html">Wishlist</a></div>
+      </div>
+      <p class="footer-bottom"><span>© <span id="year"></span> NovaCart</span></p>
+    </footer>
+
+    <script type="module" src="../js/profilePage.js"></script>
+  </body>
+</html>

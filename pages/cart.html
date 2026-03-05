@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Cart</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html" class="active">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="section cart-layout" id="cart-main">
+      <section>
+        <h1>Your Cart</h1>
+        <section id="cart-items" class="cart-list"></section>
+        <section class="section">
+          <div class="section-head">
+            <h3>You may also like</h3>
+          </div>
+          <div id="cart-recommendations" class="product-grid"></div>
+        </section>
+      </section>
+
+      <aside class="totals-card reveal">
+        <h3>Order Summary</h3>
+        <div class="coupon-row">
+          <input id="coupon-code" type="text" placeholder="Coupon code">
+          <button id="apply-coupon" class="btn btn-ghost" type="button">Apply</button>
+        </div>
+        <p id="coupon-message" class="state"></p>
+        <p id="shipping-estimate" class="state"></p>
+        <p id="delivery-date" class="state"></p>
+        <p><span>Subtotal</span><strong id="subtotal">Rs. 0</strong></p>
+        <p><span>Shipping</span><strong id="shipping">Rs. 0</strong></p>
+        <p><span>Discount</span><strong id="discount">- Rs. 0</strong></p>
+        <p class="total"><span>Total</span><strong id="total">Rs. 0</strong></p>
+        <a id="checkout-btn" class="btn btn-primary" href="./checkout.html">Proceed to Checkout</a>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Shop</h4>
+          <a href="./products.html">All Products</a>
+          <a href="./products.html?category=clothing">Clothing</a>
+          <a href="./products.html?category=accessories">Accessories</a>
+        </div>
+        <div>
+          <h4>About</h4>
+          <p>NovaCart, 21 Market Road, Bengaluru</p>
+          <a href="mailto:support@novacart.in">support@novacart.in</a>
+        </div>
+        <div>
+          <h4>Customer Service</h4>
+          <a href="#">Returns Policy</a>
+          <a href="#">Shipping Info</a>
+          <a href="./checkout.html">Secure Checkout</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        <span>© <span id="year"></span> NovaCart</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </p>
+    </footer>
+
+    <script type="module" src="../js/cartPage.js"></script>
+  </body>
+</html>

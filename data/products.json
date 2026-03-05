@@ -1,0 +1,210 @@
+[
+  {
+    "id": "p001",
+    "name": "Black Hoodie",
+    "description": "Premium cotton hoodie with brushed fleece interior and structured silhouette.",
+    "price": 1999,
+    "currency": "INR",
+    "image": "../public/images/black-hoodie.svg",
+    "gallery": [
+      "../public/images/black-hoodie.svg",
+      "../public/images/black-hoodie-alt-1.svg",
+      "../public/images/black-hoodie-alt-2.svg"
+    ],
+    "category": "clothing",
+    "stock": 25,
+    "rating": 4.7,
+    "reviewCount": 284,
+    "sku": "NC-HDY-BLK-001",
+    "material": "95% Cotton, 5% Elastane",
+    "deliveryEstimate": "Delivery by 2-4 business days",
+    "sizes": ["S", "M", "L", "XL"],
+    "specifications": {
+      "fit": "Relaxed fit",
+      "sleeve": "Full sleeve",
+      "care": "Machine wash cold"
+    }
+  },
+  {
+    "id": "p002",
+    "name": "Classic White Tee",
+    "description": "Breathable everyday t-shirt made from combed cotton with reinforced seams.",
+    "price": 799,
+    "currency": "INR",
+    "image": "../public/images/white-tee.svg",
+    "gallery": [
+      "../public/images/white-tee.svg",
+      "../public/images/white-tee-alt-1.svg",
+      "../public/images/white-tee-alt-2.svg"
+    ],
+    "category": "clothing",
+    "stock": 60,
+    "rating": 4.5,
+    "reviewCount": 412,
+    "sku": "NC-TEE-WHT-002",
+    "material": "100% Combed Cotton",
+    "deliveryEstimate": "Delivery by 1-3 business days",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "specifications": {
+      "fit": "Regular fit",
+      "neck": "Crew neck",
+      "care": "Machine wash gentle"
+    }
+  },
+  {
+    "id": "p003",
+    "name": "Runner Pro Shoes",
+    "description": "Lightweight performance shoes with responsive cushioning and breathable mesh upper.",
+    "price": 3499,
+    "currency": "INR",
+    "image": "../public/images/runner-shoes.svg",
+    "gallery": [
+      "../public/images/runner-shoes.svg",
+      "../public/images/runner-shoes-alt-1.svg",
+      "../public/images/runner-shoes-alt-2.svg"
+    ],
+    "category": "footwear",
+    "stock": 18,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "sku": "NC-SHO-RUN-003",
+    "material": "Engineered Mesh, EVA Midsole",
+    "deliveryEstimate": "Delivery by 2-5 business days",
+    "sizes": ["7", "8", "9", "10", "11"],
+    "specifications": {
+      "sole": "Anti-slip rubber outsole",
+      "weight": "240g approx",
+      "care": "Wipe with dry cloth"
+    }
+  },
+  {
+    "id": "p004",
+    "name": "Urban Backpack",
+    "description": "Water-resistant backpack with padded laptop sleeve and anti-theft zipper pocket.",
+    "price": 2499,
+    "currency": "INR",
+    "image": "../public/images/backpack.svg",
+    "gallery": [
+      "../public/images/backpack.svg",
+      "../public/images/backpack-alt-1.svg",
+      "../public/images/backpack-alt-2.svg"
+    ],
+    "category": "accessories",
+    "stock": 30,
+    "rating": 4.6,
+    "reviewCount": 165,
+    "sku": "NC-BAG-URB-004",
+    "material": "Polyester + PU Coating",
+    "deliveryEstimate": "Delivery by 2-4 business days",
+    "sizes": [],
+    "specifications": {
+      "capacity": "24L",
+      "compartments": "3 main compartments",
+      "warranty": "12-month manufacturer warranty"
+    }
+  },
+  {
+    "id": "p005",
+    "name": "Analog Watch",
+    "description": "Minimalist dial watch with stainless steel strap and sapphire-coated glass.",
+    "price": 4299,
+    "currency": "INR",
+    "image": "../public/images/watch.svg",
+    "gallery": [
+      "../public/images/watch.svg",
+      "../public/images/watch-alt-1.svg",
+      "../public/images/watch-alt-2.svg"
+    ],
+    "category": "accessories",
+    "stock": 12,
+    "rating": 4.4,
+    "reviewCount": 96,
+    "sku": "NC-WAT-ANA-005",
+    "material": "Stainless Steel + Mineral Glass",
+    "deliveryEstimate": "Delivery by 3-6 business days",
+    "sizes": [],
+    "specifications": {
+      "movement": "Quartz",
+      "waterResistance": "3 ATM",
+      "strap": "20mm brushed steel"
+    }
+  },
+  {
+    "id": "p006",
+    "name": "Denim Jacket",
+    "description": "Mid-weight denim jacket with soft lining and durable brass hardware.",
+    "price": 2899,
+    "currency": "INR",
+    "image": "../public/images/denim-jacket.svg",
+    "gallery": [
+      "../public/images/denim-jacket.svg",
+      "../public/images/denim-jacket-alt-1.svg",
+      "../public/images/denim-jacket-alt-2.svg"
+    ],
+    "category": "clothing",
+    "stock": 20,
+    "rating": 4.6,
+    "reviewCount": 221,
+    "sku": "NC-JKT-DNM-006",
+    "material": "100% Denim Cotton",
+    "deliveryEstimate": "Delivery by 2-5 business days",
+    "sizes": ["S", "M", "L", "XL"],
+    "specifications": {
+      "fit": "Regular fit",
+      "closure": "Button front closure",
+      "care": "Machine wash inside out"
+    }
+  },
+  {
+    "id": "p007",
+    "name": "Trail Sandals",
+    "description": "Durable sandals with contoured footbed and adjustable webbing straps.",
+    "price": 1599,
+    "currency": "INR",
+    "image": "../public/images/sandals.svg",
+    "gallery": [
+      "../public/images/sandals.svg",
+      "../public/images/sandals-alt-1.svg",
+      "../public/images/sandals-alt-2.svg"
+    ],
+    "category": "footwear",
+    "stock": 35,
+    "rating": 4.3,
+    "reviewCount": 143,
+    "sku": "NC-SDL-TRL-007",
+    "material": "EVA Footbed + Nylon Straps",
+    "deliveryEstimate": "Delivery by 2-4 business days",
+    "sizes": ["6", "7", "8", "9", "10"],
+    "specifications": {
+      "grip": "Deep tread outsole",
+      "closure": "Hook-and-loop straps",
+      "care": "Hand wash only"
+    }
+  },
+  {
+    "id": "p008",
+    "name": "Noise-Cancel Earbuds",
+    "description": "Wireless earbuds with active noise cancellation and low-latency game mode.",
+    "price": 4999,
+    "currency": "INR",
+    "image": "../public/images/earbuds.svg",
+    "gallery": [
+      "../public/images/earbuds.svg",
+      "../public/images/earbuds-alt-1.svg",
+      "../public/images/earbuds-alt-2.svg"
+    ],
+    "category": "electronics",
+    "stock": 22,
+    "rating": 4.7,
+    "reviewCount": 310,
+    "sku": "NC-EAR-ANC-008",
+    "material": "Polycarbonate + Silicone Tips",
+    "deliveryEstimate": "Delivery by 1-3 business days",
+    "sizes": [],
+    "specifications": {
+      "battery": "Up to 32 hours with case",
+      "bluetooth": "Bluetooth 5.3",
+      "warranty": "1-year brand warranty"
+    }
+  }
+]

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart | Products</title>
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body class="page-fade page-shell">
+    <header class="site-header">
+      <a href="./index.html" class="logo">NovaCart</a>
+      <nav>
+        <a href="./products.html" class="active">Shop</a>
+        <a href="./cart.html">Cart <span class="badge" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="section shop-wrap">
+      <button id="open-filters" class="btn btn-ghost mobile-only" type="button">Filters</button>
+      <aside class="shop-sidebar" id="shop-sidebar">
+        <div class="sidebar-head">
+          <h3>Filters <span id="active-filter-count" class="small-badge">0</span></h3>
+          <div class="sidebar-head-actions">
+            <button id="clear-filters" class="clear-filters-link" type="button">Clear Filters</button>
+            <button id="close-filters" class="btn btn-ghost mobile-only" type="button">Close</button>
+          </div>
+        </div>
+
+        <section class="filter-block">
+          <h4>Categories</h4>
+          <div id="category-pills" class="pill-group"></div>
+        </section>
+
+        <section class="filter-block">
+          <h4>Price Range</h4>
+          <p class="range-value">&#8377;<span id="price-min-label">0</span> &mdash; &#8377;<span id="price-max-label">10,000</span></p>
+          <div class="range-wrap" id="range-wrap">
+            <input type="range" id="price-min" min="0" max="10000" value="0">
+            <input type="range" id="price-max" min="0" max="10000" value="10000">
+          </div>
+        </section>
+
+        <section class="filter-block">
+          <h4>Rating</h4>
+          <div id="rating-buttons" class="rating-button-group">
+            <button class="rating-btn active" data-rating="0" type="button"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>Any rating</span></button>
+            <button class="rating-btn" data-rating="4" type="button"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span>& above</span></button>
+            <button class="rating-btn" data-rating="3" type="button"><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span><span>& above</span></button>
+            <button class="rating-btn" data-rating="2" type="button"><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span><span>& above</span></button>
+          </div>
+        </section>
+
+        <section class="filter-block">
+          <h4>Availability</h4>
+          <label class="stock-row" for="stock-toggle">
+            <span>In Stock only</span>
+            <button id="stock-toggle" class="toggle-pill" type="button" aria-label="In Stock only">
+              <span class="toggle-knob"></span>
+            </button>
+          </label>
+        </section>
+      </aside>
+
+      <section class="shop-main">
+        <section class="top-chip-strip" id="top-chip-strip">
+          <button class="chip-toggle active" data-top-category="all" type="button">All</button>
+          <button class="chip-toggle" data-top-category="clothing" type="button">Clothing</button>
+          <button class="chip-toggle" data-top-category="footwear" type="button">Footwear</button>
+          <button class="chip-toggle" data-top-category="accessories" type="button">Accessories</button>
+          <button class="chip-toggle" data-top-category="electronics" type="button">Electronics</button>
+          <button class="chip-toggle" data-top-category="new" type="button">New Arrivals</button>
+          <button class="chip-toggle" data-top-category="sale" type="button">Sale</button>
+        </section>
+
+        <section class="catalog-hero reveal">
+          <h1>Shop NovaCart</h1>
+          <p>Dense product discovery with smart filters and fast search.</p>
+        </section>
+
+        <section class="filters reveal shop-toolbar">
+          <div class="search-box">
+            <input id="search" type="search" placeholder="Search products...">
+            <div id="search-suggestions" class="search-suggestions"></div>
+          </div>
+          <select id="sort" class="sort-select">
+            <option value="default">Sort by</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating-desc">Rating: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+          <p id="results-count" class="results-count"></p>
+        </section>
+
+        <section class="product-grid dense-grid" id="products-grid"></section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><h4>Shop</h4><a href="./products.html">All Products</a></div>
+        <div><h4>Account</h4><a href="./profile.html">My Profile</a><a href="./orders.html">Orders</a></div>
+      </div>
+      <p class="footer-bottom"><span>&copy; <span id="year"></span> NovaCart</span></p>
+    </footer>
+
+    <script type="module" src="../js/productsPage.js"></script>
+  </body>
+</html>
